@@ -48,17 +48,129 @@
     </div>
 </div>
 
-<div id="parent">
-<div class="rounded-lg p-6 w-full" id="que-template">
-    <h2 id="que" class="text-xl  text-gray-800 text-center md:text-left md:text-left xl:text-4xl xl:text-center">
-       <b> Question <span id="que-count"> 1 </span> of 4: </b> <span id="question"> Do you know Brost Global? </span>
-    </h2>
+<div class="pl-30">
 
-    <div class="mt-4 option-buttons" id="button_parent">
-        <button class="w-full bg-blue-800 text-white rounded-2xl py-3 mt-2, mb-6">Yes</button>
-        <button class="w-full bg-blue-800 text-white rounded-2xl py-3 mt-2" >No</button>
+    <div id="parent">
+
+        <div id="que-template" class="rounded-lg p-6 w-full" >
+            <h2 id="que" class="text-xl text-gray-800 text-center">
+                <b> Question <span id="que-count">1</span> of 4: </b>
+                <span id="question">Do you know Brost Global?</span>
+            </h2>
+            <div class="mt-4" id="button_parent">
+                <button class="w-full bg-blue-800 text-white rounded-2xl py-3 mt-2">Yes</button>
+                <button class="w-full bg-blue-800 text-white rounded-2xl py-3 mt-2">No</button>
+            </div>
+        </div>
     </div>
+
+
+    <!-- Comment Input -->
+    <div class=" w-full p-2 text-gray-700 border rounded-lg focus:outline-none">
+    <div class="flex items-center justify-between border-b border-gray-300 pb-4 mb-4">
+        <!-- Input field with full width -->
+        <input
+                type="text"
+                placeholder="Comment"
+                class="w-full p-2 text-gray-700 border rounded-lg focus:outline-none"
+        />
+        <!-- Text counter aligned to the right -->
+        <span class="ml-2 text-gray-500 text-sm whitespace-nowrap">10 / 183</span>
+    </div>
+    </div>
+
+
+    <!-- Comment Cards -->
+    <div class="grid gap-4 md:grid-cols-3 mb-10 pl-5 pr-5">
+        <!-- Example Comment Card -->
+        <div class="bg-white rounded-2xl shadow p-4">
+            <div class="flex items-start mb-2">
+                <!-- Profile Image Placeholder -->
+                <div class="bg-gray-300 rounded-full w-10 h-10 flex-shrink-0"></div>
+                <div class="ml-3">
+                    <h3 class="font-semibold text-gray-800">Brost Global</h3>
+                    <p class="text-gray-600 text-sm">
+                        With the global Anniversary Campaign, everyone can get Independence Day gifts prepared by Brost Global
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-center text-gray-500 text-sm space-x-4 mt-2">
+            <span class="flex items-center">
+                <img src="../img/tup.jpg" alt="Thumbs Up" class="w-4 h-4 ">
+            </span>
+                <span class="flex items-center">
+                <img src="../img/tdown.jpg" alt="Thumbs Down" class="w-4 h-4">
+            </span>
+                <span>3 minutes ago</span>
+            </div>
+        </div>
+
+
+        <!-- Example Comment Card -->
+        <div class="bg-white  rounded-2xl shadow p-4">
+            <div class="flex items-start mb-2">
+                <!-- Profile Image Placeholder -->
+                <div class="bg-gray-300 rounded-full w-10 h-10 flex-shrink-0"></div>
+                <div class="ml-3">
+                    <h3 class="font-semibold text-gray-800">Brost Global</h3>
+                    <p class="text-gray-600 text-sm">
+                        With the global Anniversary Campaign, everyone can get Independence Day gifts prepared by Brost Global
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-center text-gray-500 text-sm space-x-4 mt-2">
+            <span class="flex items-center">
+                <img src="../img/tup.jpg" alt="Thumbs Up" class="w-4 h-4 ">
+            </span>
+                <span class="flex items-center">
+                <img src="../img/tdown.jpg" alt="Thumbs Down" class="w-4 h-4">
+            </span>
+                <span>3 minutes ago</span>
+            </div>
+        </div>
+
+        <!-- Repeat Comment Card as Needed -->
+    </div>
+
 </div>
+
+
+<!-- Popup (Responsive for mobile and desktop) -->
+<div id="popuppc" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center p-4 md:p-0">
+    <div class="bg-white rounded-xl p-6 max-w-md text-center w-full md:w-auto">
+        <!-- Image at the top -->
+        <img src="../img/house.jpg" alt="House" class="w-full rounded-t-lg mb-4">
+
+        <h2 class="text-2xl font-bold mb-2">Congratulations!</h2>
+        <p class="text-gray-700 mb-4">
+            Your answer has been saved successfully! You have a chance to win gifts. Select the correct box with your prize inside. You have 3 attempts. Good luck!
+        </p>
+        <button onclick="closePopup()" class="bg-blue-600 text-white rounded-lg px-4 py-2 md:px-6 md:py-2">OK</button>
+       </div>
 </div>
+
+
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div id="comment-container" class="grid gap-4 md:grid-cols-3 mb-10 pl-5 pr-5">-->
+<!--    &lt;!&ndash; Comments will be injected here by JavaScript &ndash;&gt;-->
+<!--</div>-->
