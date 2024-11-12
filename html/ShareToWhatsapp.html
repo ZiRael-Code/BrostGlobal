@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brost Global Housing Estate</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="../js/CongratScreen.js"></script>
+</head>
+<body class="bg-gray-100">
+
+<!-- Header Section -->
+<div class="bg-white py-4 px-4 md:px-8 lg:px-16 flex flex-col items-center md:flex-row md:justify-between md:bg-blue-900">
+    <!-- Logo on the left -->
+    <div class="flex items-center justify-center md:justify-start">
+        <img src="../img/logo.jpg" alt="Brost Global Logo" class="h-10 md:h-12">
+    </div>
+
+    <div class="w-full bg-blue-900 text-white py-2 mt-2 md:mt-0 md:bg-transparent md:flex md:justify-end">
+        <div class="flex justify-between w-full md:w-auto px-4 md:px-0">
+            <!-- Adjust font size for mobile and larger screens -->
+            <span class="text-xs md:text-lg md:ml-4">🎉 Brost Global - Anniversary Giveaway 🎊</span>
+            <span class="text-xs md:text-lg md:ml-4" id="dynamic-date"></span>
+        </div>
+    </div>
+</div>
+
+
+<!-- Full-width Container -->
+<div class="bg-white p-8 shadow-md w-full mx-4">
+    <!-- Title -->
+    <h1 class="text-3xl font-bold text-blue-800 text-center mb-8">Congratulations!</h1>
+
+    <!-- Prize Image -->
+    <div class="flex justify-center mb-6">
+        <img src="../img/phone.png" alt="iPhone 15 Pro Max" class="w-60 h-auto">
+    </div>
+
+    <!-- Prize Description -->
+    <p class="text-center text-gray-700 mb-8 text-lg">
+        Your prize is: <strong>iPhone 15 Pro Max</strong>, follow the instructions on the next page to claim your prize!
+    </p>
+
+    <!-- Instructions Box -->
+    <div class="bg-gray-100 p-6 rounded-lg mb-6">
+        <ol class="list-decimal text-gray-700 mb-6 ml-6 text-lg">
+            <li class="mb-5">Share with 5 groups/20 friends on the following apps (Click on the corresponding icon below)</li>
+            <li>Click “Continue” and claim your prize.</li>
+        </ol>
+
+        <!-- Share Button -->
+        <button
+                onclick="window.open('https://wa.me/?text=Check%20out%20this%20amazing%20prize%20offer!%20I%20just%20won%20an%20iPhone%2015%20Pro%20Max%20🎉', '_blank')"
+                class="bg-green-600 hover:bg-green-700 text-white w-full py-4 rounded-lg font-semibold text-lg mb-6">
+            Whatsapp
+        </button>
+
+
+        <!-- Progress Bar -->
+        <div class="w-full bg-gray-300 rounded-full h-6 mb-4">
+            <div class="bg-blue-600 h-6 rounded-full text-center text-white text-sm" style="width: 50%;">50%</div>
+        </div>
+        <p class="text-gray-600 text-center">Share it until the bar is full</p>
+    </div>
+
+    <!-- Continue Button -->
+    <button class="bg-blue-800 hover:bg-blue-900 text-white w-full py-4 rounded-lg font-semibold text-lg">
+        Continue
+    </button>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div id="comment-container" class="grid gap-4 md:grid-cols-3 mb-10 pl-5 pr-5">-->
+<!--    &lt;!&ndash; Comments will be injected here by JavaScript &ndash;&gt;-->
+<!--</div>-->

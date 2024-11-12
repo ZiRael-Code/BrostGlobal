@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     dateElement.textContent = today.toLocaleDateString(undefined, options);
     displayQuestion(currentQuestionIndex);
-
+    duplicateCommentPost()
 });
 
 
@@ -127,6 +127,16 @@ function closePopup() {
 //     }
 // }
 
+
+function duplicateCommentPost(){
+    let commentPostParent = document.getElementById('comment-post-parent');
+
+    let commentPost = document.getElementById('comment-post');
+    for (let i = 0; i < 2; i++) {
+        let cloneComment = commentPost.cloneNode(true);
+        commentPostParent.append(cloneComment)
+    }
+}
 
 
 
