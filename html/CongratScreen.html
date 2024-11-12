@@ -48,6 +48,8 @@
     </div>
 </div>
 
+<div class="xl:pr-24 xl:pl-20">
+
 <div class="pl-30">
 
     <div id="parent">
@@ -66,13 +68,14 @@
 
 
     <!-- Comment Input -->
-    <div class=" w-full p-2 text-gray-700 border rounded-lg focus:outline-none">
-    <div class="flex items-center justify-between border-b border-gray-300 pb-4 mb-4">
+
+    <div class=" w-full p-2 text-gray-700  rounded-lg focus:outline-none">
+    <div class="flex items-center justify-between pb-4 mb-4">
         <!-- Input field with full width -->
         <input
                 type="text"
                 placeholder="Comment"
-                class="w-full p-2 text-gray-700 border rounded-lg focus:outline-none"
+                class="w-full p-2 text-gray-700 rounded-lg focus:outline-none"
         />
         <!-- Text counter aligned to the right -->
         <span class="ml-2 text-gray-500 text-sm whitespace-nowrap">10 / 183</span>
@@ -136,7 +139,7 @@
 
 
 <!-- Popup (Responsive for mobile and desktop) -->
-<div id="popuppc" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center p-4 md:p-0">
+<div id="popuppc" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center hiddens justify-center p-4 md:p-0">
     <div class="bg-white rounded-xl p-6 max-w-md text-center w-full md:w-auto">
         <!-- Image at the top -->
         <img src="../img/house.jpg" alt="House" class="w-full rounded-t-lg mb-4">
@@ -147,6 +150,7 @@
         </p>
         <button onclick="closePopup()" class="bg-blue-600 text-white rounded-lg px-4 py-2 md:px-6 md:py-2">OK</button>
        </div>
+</div>
 </div>
 
 
