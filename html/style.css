@@ -1,0 +1,13 @@
+@media (max-width: 640px) {
+    /* Mobile screen styling */
+    .box-cover {
+        top: -29px !important;
+    }
+}
+
+@media (min-width: 641px) {
+    /* Desktop and larger screen styling */
+    .box-cover {
+        top: -40px !important;
+    }
+}

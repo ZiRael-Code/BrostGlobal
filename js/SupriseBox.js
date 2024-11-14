@@ -5,7 +5,10 @@ function toggleBox(boxId) {
         document.querySelector(`#box-${openedBox} .box-cover`).style.transform = "translateY(0px)";
     }
 
+
+
     const currentCover = document.querySelector(`#box-${boxId} .box-cover`);
+
     if (openedBox === boxId) {
         currentCover.style.transform = "translateY(0px)"
 
@@ -96,8 +99,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     dateElement.textContent = today.toLocaleDateString(undefined, options);
     displayQuestion(currentQuestionIndex);
+
+
 });
 
+function closeBox(){
+    const currentCover = document.getElementById('box-4');
+
+    if (window.innerWidth <= 900) { // Mobile screen check
+        // On mobile, move the cover downwards to simulate "opening"
+        currentCover.style.top = currentCover.getAttribute('data-mobile-top');
+    } else {
+        // On desktop, keep the cover at its initial position
+        currentCover.style.top = currentCover.getAttribute('data-desktop-top');
+    }
+}
+window.onload = () => closeBox()
 
 
 function duplicateCommentPost(){
